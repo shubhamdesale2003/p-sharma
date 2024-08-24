@@ -10,6 +10,10 @@ html,body{
     height: 100%;
     background-color: #0b0b0b;
     /* cursor: none; */
+
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
 .crsr{
@@ -297,7 +301,7 @@ span{
 i{
     font-size: 4vw;
 }
-<<<<<<< HEAD
+ 
 
 .btn{
    display: flex;
@@ -328,5 +332,4 @@ footer{
     padding-top: 1rem;
     font-family:  "Edu VIC WA NT Beginner", cursive;
 }
-=======
->>>>>>> origin/main
+
