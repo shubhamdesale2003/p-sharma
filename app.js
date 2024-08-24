@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('.main'),
+    smooth: true
+});
+
 
 
 (function loadingAnimation(){
@@ -9,6 +14,10 @@ t1.from(".line1 h1",{
     duration:0.6,
     delay:0.5
 })
+t1.from('.now-txt', {
+    opacity:0,
+})
+
 t1.from('.line1-part1',{
   opacity:0,
   onStart:function(){
@@ -48,6 +57,18 @@ t1.from('.hero h4',{
     y:120,
     stagger:0.2
 })
+t1.from(".page2", {
+    y:1200,
+    duration:0.6,
+    delay:0.2,
+})
+t1.from(".page2-content h1, .underline , p , img", {
+    y:150,
+    stagger:0.25,
+    duration:0.6,
+    delay:0.5
+})
+
 
 })();
 
@@ -71,8 +92,8 @@ t1.from('.hero h4',{
    
 //    gooey:true
 //   });
-
-Shery.makeMagnet(".menu a , .logo , .txt-stroke", {})
+ 
+Shery.makeMagnet(" .menu a, .logo h2, .txt-stroke , .flex img , .gola i, .btn a", {})
 Shery.imageEffect(".image",{
     style:5,
     gooey:true
