@@ -1,7 +1,7 @@
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('.main'),
-    smooth: true
-});
+// const scroll = new LocomotiveScroll({
+//     el: document.querySelector('.main'),
+//     smooth:true
+// });
 
 
 
@@ -50,8 +50,10 @@ t1.from('.page1',{
 t1.to('.loader',{
     display:"none"
 })
-t1.from('nav',{
+t1.from('nav .menu a, .logo',{
     opacity:0,
+    y:-50,
+    stagger:.2
 })
 t1.from('.hero h4',{
     y:120,
@@ -63,6 +65,7 @@ t1.from(".page2", {
     delay:0.2,
 })
 t1.from(".page2-content h1, .underline , p , img", {
+    opacity:0,
     y:150,
     stagger:0.25,
     duration:0.6,
@@ -115,3 +118,4 @@ document.querySelector(".hero3").addEventListener("mouseleave", function(){
         opacity:0,
     })
 })
+
